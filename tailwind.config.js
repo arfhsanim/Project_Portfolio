@@ -1,25 +1,21 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./index.html', './src/**/*.{html,js}', './src/input.css'],
   theme: {
+    fontFamily: {
+      sans: ['Open Sans', 'sans-serif'],
+      inter: ['Inter', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif']
+    },
     extend: {
       colors: {
-        'body': '#17171F',
-        'selected-text': '#A3A3FF',
-        'theme': '#3F3FFF',
-        'nav': '#404053',
-        'secondary': '#9191A4',
-        'badge': '#3F3F51',
-        'input-border': '#565666',
-        'input': '#2A2A35'
-      },
-      fontFamily: {
-        'poppins': ["'Poppins'", 'sans-serif']
+        primary: "#0872BF",
+        background:"#141A1A"
+      }, 
+      dropShadow: {
+        '3xl': '0 4px 20px rgba(93, 173, 236, 0.23)',
       }
     },
   },
-  variants: {
-    extend: {},
-  },
-
+  plugins: [],
 }

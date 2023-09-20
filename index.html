@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="tailwind.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 </head>
-<body>
+
+<body class="bg-background">
+    <!-- header -->
+    <header class="">
+        <nav class="bg-gray-800 lg:bg-transparent pt-1 pb-3">
+            <div class="flex spabet items-center justify-between mr-20 ml-20 mt-3">
+                <a class="text-white font-bold text-lg items-center gap-3 flex" href=""><img src="src/img/Logo.svg"
+                        alt="" />Portfolio
+                </a>
+                <!-- for larger device  -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Home</a>
+                    <a href="#about" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">About</a>
+                    <a href="#project" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Project</a>
+                    <a href="#resume" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Resume</a>
+                    <a href="#contact" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Contact</a>
+                    <a href="#hire">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Hire Me
+                        </button>
+                    </a>
+                </div>
+                <!-- manu button for mobile device -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-white text-2xl">
+                        <i class="bx bx-menu"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div id="mobile-menu" class="hidden lg:hidden text-center  ">
+                <a href="#home" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full block">Home</a>
+                <a href="#about" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full block ">About</a>
+                <a href="#project" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full block">Project</a>
+                <a href="#resume" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full block ">Resume</a>
+                <a href="#contact" class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full block">Contact</a>
+                <a href="#hire"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ">Hire Me</button></a>
+            </div>
+            
+        </nav>
+    </header>
+
+
     
+
+
 </body>
+<script src="src/app.js"></script>
+
 </html>
